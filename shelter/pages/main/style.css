@@ -127,7 +127,7 @@ header {
     height: 728px;
     left: calc(50% - 698px/2 + 251px);
     bottom: 0px;
-    background-image: url(/shelter/assets/images/start-screen-puppy.png);
+    background: url(../../assets/images/start-screen-puppy.png);
 }
 
             /* screen__content */
@@ -154,7 +154,7 @@ header {
     height: 408px;
     left: 175px;
     top: 0px;
-    background-image: url(/shelter/assets/images/about-pets.png);
+    background-image: url(../../assets/images/about-pets.png);
 }
 
 .about__text {
@@ -289,5 +289,5 @@ top: 10px;
     width: 300px;
     height: 310px;
     left: calc(50% - 300px/2 + 450px);
-    background-image: url(/shelter/assets/images/footer-puppy.png);
+    background-image: url(../../assets/images/footer-puppy.png);
 }
