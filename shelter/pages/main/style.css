@@ -284,6 +284,8 @@ top: 10px;
 }
 
 .footer__puppy {
+    top: 10px;
+
     width: 300px;
     height: 310px;
     left: calc(50% - 300px/2 + 450px);
