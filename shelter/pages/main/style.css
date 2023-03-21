@@ -1,7 +1,7 @@
 html {
     min-width: 1280px;
 }
-
+            /* start__screen */
 .start__screen {
     position: absolute;
     height: 908px;
@@ -11,7 +11,7 @@ html {
     bottom: 0%;
     background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #211F20;
 }
-
+            /* header */
 header {
     position: absolute;
     width: 1200px;
@@ -27,6 +27,23 @@ header {
     top: 0px;
 }
 
+.logo__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 110%;
+    color: #F1CDB3;
+}
+
+.logo__title__span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
 .header__nav {
     position: absolute;
     width: 443px;
@@ -39,11 +56,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 }
 .header__nav__link a {
     color: #CDCDCD;
 }
-
+            /* screen__content */
 .screen__content {
     position: absolute;
     width: 1200px;
@@ -61,6 +79,48 @@ header {
     color: #FFFFFF
 }
 
+.screen__header h2 {
+    width: 310px;
+    height: 114px;
+    left: calc(50% - 310px/2 - 75px);
+    bottom: 208px;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 57.2px;
+    color: #FFFFFF;
+}
+
+.screen__header p {
+    width: 460px;
+    height: 72px;
+    left: calc(50% - 460px/2);
+    bottom: 94px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #CDCDCD;
+}
+
+.button__primary {
+    padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    left: calc(50% - 207px/2 - 126.5px);
+    bottom: 0px;
+    border-radius: 100px;
+    background: #F1CDB3;
+    border: none;   
+}
+
+.button__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
 .screen__puppy {
     position: absolute;
     width: 698px;
@@ -70,3 +130,162 @@ header {
     background-image: url(/shelter/assets/images/start-screen-puppy.png);
 }
 
+            /* screen__content */
+.section__about {
+    position: absolute;
+    height: 588px;
+    left: 0%;
+    right: 0%;
+    top: 908px;
+    background: #FFFFFF;
+}
+
+.about__content {
+    position: absolute;
+    width: 1200px;
+    height: 408px;
+    left: calc(50% - 1200px/2);
+    top: calc(50% - 408px/2 - 10px);
+}
+
+.about__pets {
+    position: absolute;
+    width: 300px;
+    height: 408px;
+    left: 175px;
+    top: 0px;
+    background-image: url(/shelter/assets/images/about-pets.png);
+}
+
+.about__text {
+    position: absolute;
+    width: 430px;
+    height: 380px;
+    left: 595px;
+    top: 14px;
+}
+
+.about__text h3 {
+    width: 370px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.about__text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    width: 430px;
+    color: #4C4C4C;
+}
+
+                /* Pets */
+
+.section__pets {
+    position: absolute;
+    height: 877px;
+    left: 0%;
+    right: 0%;
+    top: 1496px;
+    background: #F6F6F6;
+}
+
+                /* Help */
+                
+.section__help {
+    position: absolute;
+    height: 611px;
+    left: 0%;
+    right: 0%;
+    top: 2373px;
+    background: #FFFFFF;
+}
+
+                /* Donation */
+
+.section__donation {
+    position: absolute;
+    height: 462px;
+    left: 0%;
+    right: 0%;
+    top: 2984px;
+    color: #F6F6F6;
+}
+
+                /* Footer */
+
+footer {
+    position: absolute;
+    height: 350px;
+    left: 0%;
+    right: 0%;
+    top: 3446px;
+    background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer__content {
+display: flex;
+justify-content: space-around;
+align-items:center;
+top: 10px;
+}
+
+.footer__contacts {
+    width: 278px;
+    height: 234px;
+}
+
+.footer__contacts h3 {
+   color: #FFFFFF;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 130%;
+   letter-spacing: 0.06em;
+}
+
+.footer__contacts h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.footer__location {
+    width: 278px;
+    height: 234px;
+}
+
+.footer__location h3 {
+   color: #FFFFFF;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 35px;
+   line-height: 130%;
+   letter-spacing: 0.06em;
+}
+
+.footer__location h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+}
+
+.footer__puppy {
+    width: 300px;
+    height: 310px;
+    left: calc(50% - 300px/2 + 450px);
+    background-image: url(/shelter/assets/images/footer-puppy.png);
+}
