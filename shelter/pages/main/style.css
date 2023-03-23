@@ -197,6 +197,61 @@ header {
     background: #F6F6F6;
 }
 
+.pets__content {
+    position: absolute;
+    width: 1200px;
+    height: 697px;
+    left: calc(50% - 1200px/2);
+    top: 80px;
+}
+
+.pets__text {
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    left: 400px;
+    top: 0px;
+}
+
+.pets__text h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.pets__slider {
+    position: absolute;
+    width: 1200px;
+    height: 435px;
+    left: 0px;
+    top: 150px;
+}
+
+.button__pets__slider {
+    position: absolute;
+    width: 261px;
+    height: 52px;
+    left: 470px;
+    top: 645px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+}
+
+.button__pets__slider span {
+    width: 171px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
                 /* Help */
                 
 .section__help {
@@ -208,6 +263,40 @@ header {
     background: #FFFFFF;
 }
 
+.help__content {
+    position: absolute;
+    width: 1200px;
+    height: 431px;
+    left: calc(50% - 1200px/2);
+    top: 80px;
+}
+
+.help__text {
+    position: absolute;
+    width: 308px;
+    height: 90px;
+    left: 446px;
+    top: 0px;
+}
+
+.help__text h3 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.help__list {
+    position: absolute;
+    width: 1026px;
+    height: 281px;
+    left: 87px;
+    top: 150px;
+}
+
                 /* Donation */
 
 .section__donation {
@@ -217,6 +306,70 @@ header {
     right: 0%;
     top: 2984px;
     color: #F6F6F6;
+}
+
+.donation__content {
+    position: absolute;
+    width: 915px;
+    height: 282px;
+    left: calc(50% - 915px/2 + 0.5px);
+    top: 80px;
+}
+
+.donation__dog {
+    position: absolute;
+    width: 505px;
+    height: 261px;
+    left: 0px;
+    top: 11px;
+    background: url(../../assets/images/donation-dog.png)
+}
+
+.donation__text {
+    position: absolute;
+    width: 380px;
+    height: 282px;
+    left: 535px;
+    top: 0px;
+}
+
+.donation__text h3 {
+    width: 300px;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;      
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.donation__text h5 {
+    width: 307px;
+    height: 17px;
+    left: 0px;
+    top: 110px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.credit__card {
+    position: absolute;
+    width: 349px;
+    height: 43px;
+    left: 0px;
+    top: 200px;
+    background: #F1CDB3;
+    border-radius: 9px;
+    border: none;
 }
 
                 /* Footer */
