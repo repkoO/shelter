@@ -1,21 +1,27 @@
+html {
+    min-width: 1280px;
+}
 
+body {
+    margin: 0;
+}
             /* header */
 header {
-    position: absolute;
-    width: 1200px;
-    height: 60px;
-    left: calc(50% - 1200px/2);
-    top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    margin: 0 40px 0 30px;
 }
 
 .header__title {
     width: 184px;
     height: 60px;
-    left: 0px;
-    top: 0px;
 }
 
 .logo__title {
+    margin: 0;
+    padding: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -32,49 +38,34 @@ header {
     color: #545454;
 }
 
-.header__nav {
-    position: absolute;
-    width: 443px;
-    height: 27px;
-    left: 757px;
-    top: 16px;
-}
-
 .header__nav__link {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
 }
-.header__nav__link a {
-    color: #545454;
-}
 
+.header__nav__link a {
+    text-decoration: none;
+    color: #CDCDCD;
+}
             /* main */
 
 main {
-    position: absolute;
-    height: 1342px;
-    left: 0%;
-    right: 0%;
-    top: 170px;
     background: #F6F6F6
 }
 
-.pets__content {
-    display: block;
+.pets__containter {
+    padding: 80px 40px 100px 40px;
 }
 
 .pets__title {
-    /* position: absolute;
-    width: 400px;
-    height: 90px;
-    left: calc(50% - 400px/2);
-    top: 0px; */
+    padding-bottom: 45px;
     text-align: center;
 }
 
 .pets__title h3 {
+    margin: 0;
     font-style: normal;
     font-weight: 400;
     font-size: 35px;
@@ -83,46 +74,120 @@ main {
 }
 
 .cards__containter {
-    display: flex;
-    align-items: center;
-    /* width: 1200px;
-    height: 930px; */
-    left: 0px;
-    top: 135px;
+display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .pets__card {
-/* position: absolute;
-left: calc(50% - 270px/2 - 465px); */
-width: 270px;
-height: 435px;
-top: 15px;
-background: #FAFAFA;
-border-radius: 9px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-left: 10px;
+    width: 270px;
+    height: 435px;
+    background: #FAFAFA;
+    border-radius: 9px;
 }
 
-            /* Button */
-button {
+.pets__card p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.card__button {
     box-sizing: border-box;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
+    background-color: white;
+    padding: 15px 45px;
 }
+
+.card__button span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+
+
+
+            /* Button */
+
+.pets__buttons {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.pets_buttons-grey {
+    box-sizing: border-box;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-left: 10px;
+    width: 52px;
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.pets_buttons-normal {
+    box-sizing: border-box;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-left: 10px;
+    width: 52px;
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: #F1CDB3
+}
+
+.pets_buttons-style {
+    box-sizing: border-box;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    margin-left: 10px;
+    width: 52px;
+    height: 52px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: #F6F6F6;
+}
+
                /* Footer */
 
 footer {
-    position: absolute;
-    height: 350px;
-    left: 0%;
-    right: 0%;
-    top: 1462px;
     background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
 }
 
-.footer__content {
-display: flex;
-justify-content: space-around;
-align-items:center;
-top: 10px;
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 40px 40px 0 40px;
 }
 
 .footer__contacts {
@@ -131,6 +196,7 @@ top: 10px;
 }
 
 .footer__contacts h3 {
+    margin: 0;
    color: #FFFFFF;
    font-style: normal;
    font-weight: 400;
@@ -154,6 +220,7 @@ top: 10px;
 }
 
 .footer__location h3 {
+    margin: 0;
    color: #FFFFFF;
    font-style: normal;
    font-weight: 400;
@@ -171,10 +238,12 @@ top: 10px;
     color: #F1CDB3;
 }
 
+.img__footer {
+padding-right: 10px;
+}
+
 .footer__puppy {
-    top: 10px;
     width: 300px;
     height: 310px;
-    left: calc(50% - 300px/2 + 450px);
     background-image: url(../../assets/images/footer-puppy.png);
 }
