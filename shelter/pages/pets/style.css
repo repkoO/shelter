@@ -1,5 +1,6 @@
 html {
     min-width: 1280px;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -52,10 +53,12 @@ header {
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
-/* identical to box height, or 24px */
+    color: #545454;
+}
 
-/* color-dark-l */
-color: #545454;
+.header__nav__link a:hover {
+    transition: ease-in 0.3s;
+    border-bottom: 3px solid #F1CDB3;
 }
 
 .link__style {
@@ -185,13 +188,13 @@ display: flex;
 
                /* Footer */
 
+
 footer {
     background: url(../../assets/images/start-screen-gradient-background.png);
     background-size: cover;
 }
 
-
-.footer__container {
+.footer__content {
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -222,6 +225,10 @@ footer {
     color: #F1CDB3;
 }
 
+.footer__contacts a {
+    text-decoration: none;
+}
+
 .footer__location {
     width: 278px;
     height: 234px;
@@ -246,12 +253,33 @@ footer {
     color: #F1CDB3;
 }
 
-.img__footer {
-padding-right: 10px;
+.footer__location  a {
+    text-decoration: none;
 }
 
-.footer__puppy {
-    width: 300px;
-    height: 310px;
-    background-image: url(../../assets/images/footer-puppy.png);
+.icon__email {
+    display: flex;
+    align-items: center;
+}
+
+.icon__email img {
+    padding-right: 20px;
+}
+
+.icon__phone {
+    display: flex;
+    align-items: center;
+}
+
+.icon__phone img {
+    padding-right: 20px;
+}
+
+.icon__location {
+    display: flex;
+    align-items: center;
+}
+
+.icon__location img {
+    padding-right: 20px;
 }

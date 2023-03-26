@@ -1,5 +1,6 @@
 html {
     min-width: 1280px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -55,6 +56,11 @@ header {
     color: #CDCDCD;
 }
 
+.header__nav__link a:hover {
+    transition: ease-out 0.2s;
+    border-bottom: 3px solid #F1CDB3;
+}
+
 .link__style {
     border-bottom: 3px solid #F1CDB3;
 }
@@ -88,6 +94,7 @@ header {
 }
 
 .button__primary {
+    cursor: pointer;
     padding: 15px 45px;
     border-radius: 100px;
     background: #F1CDB3;
@@ -195,6 +202,12 @@ header {
     background-color: white;
 }
 
+.slider__card:hover > .slider__button {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: #FDDCC4;
+}
+
 .slider__card p {
     font-style: normal;
     font-weight: 400;
@@ -245,6 +258,12 @@ header {
     background: #F1CDB3;
     border-radius: 100px;
     border: none;
+
+}
+
+.button__pets__slider:hover {
+    cursor: pointer;
+    background: #FDDCC4;
 }
 
 .button__pets__slider span {
@@ -416,7 +435,11 @@ footer {
     font-size: 20px;
     line-height: 115%;
     letter-spacing: 0.06em;
-    color: #F1CDB3;
+    color: #F1CDB3;   
+}
+
+.footer__contacts a {
+    text-decoration: none;
 }
 
 .footer__location {
@@ -443,9 +466,14 @@ footer {
     color: #F1CDB3;
 }
 
+.footer__location a {
+    text-decoration: none;
+}
+
 .icon__email {
     display: flex;
     align-items: center;
+
 }
 
 .icon__email img {
