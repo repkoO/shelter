@@ -47,7 +47,19 @@ header {
 
 .header__nav__link a {
     text-decoration: none;
-    color: #CDCDCD;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+/* identical to box height, or 24px */
+
+/* color-dark-l */
+color: #545454;
+}
+
+.link__style {
+    border-bottom: 3px solid #F1CDB3;
 }
             /* main */
 
@@ -80,13 +92,11 @@ display: flex;
 }
 
 .pets__card {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 45px;
     margin-left: 10px;
-    width: 270px;
     height: 435px;
     background: #FAFAFA;
     border-radius: 9px;
@@ -119,14 +129,11 @@ display: flex;
 }
 
 
-
-
             /* Button */
 
 .pets__buttons {
     justify-content: center;
     display: flex;
-    align-items: center;
 }
 
 .pets_buttons-grey {
@@ -179,7 +186,8 @@ display: flex;
                /* Footer */
 
 footer {
-    background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background: url(../../assets/images/start-screen-gradient-background.png);
+    background-size: cover;
 }
 
 

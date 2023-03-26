@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../favicon.ico">
     <title>Shelter</title>
 </head>
 <body>
@@ -12,11 +13,11 @@
     <header>
         <div class="header__title">
             <h1 class="logo__title">Cozy House</h1>
-            <p class="logo__title__p">Shelter for pets in Boston</span>
+            <p class="logo__title__p">Shelter for pets in Boston</p>
         </div>
         <nav>
             <div class="header__nav__link">
-                <a href="#about">About the shelter</a>
+                <a href="#about" class="link__style">About the shelter</a>
                 <a href="#pets">Our pets</a> 
                 <a href="#help">Help the shelter</a> 
                 <a href="#contacts">Contacts</a>  
@@ -47,59 +48,129 @@
     <section class="section__pets">
         <div class="pets__content">
             <div class="pets__text">
-                <h3>Our friends who
+                <h3>Our friends who<br>
                 are looking for a house</h3>
             </div>
-            <div class="pets__slider">
+                <div class="pets__slider">
+                    <div class="slider__button-style"><span>&larr;</span></div>
+                <div class="slider__card">
+                    <img src="../../assets/images/pets-katrine.png" alt="">
+                    <p>Katrine</p>
+                    <button class="slider__button"><span>Learn more</span></button>
+                </div>
+                <div class="slider__card">
+                    <img src="../../assets/images/pets-jennifer.png" alt="">
+                    <p>Jennifer</p>
+                    <button class="slider__button"><span>Learn more</span></button>
+                </div>
+                <div class="slider__card">
+                    <img src="../../assets/images/pets-woody.png" alt="">
+                    <p>Woody</p>
+                    <button class="slider__button"><span>Learn more</span></button>
+                </div>
+                <div class="slider__button-style"><span>&rarr;</span></div>
             </div>
-            <button class="button__pets__slider">
-                <span>Get to know the rest</span>
-            </button>
+            <div class="buttons__pets">
+                <button class="button__pets__slider">
+                    <span>Get to know the rest</span>
+                </button>
+                </div>
         </div>
     </section>
     <section class="section__help">
         <div class="help__content">
             <div class="help__text">
-                <h3>How you can help
+                <h3>How you can help<br>
                     our shelter</h3>
             </div>
-            <div class="help__list">
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
+            <div class="help__list-line-one">
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-pet-food.png" width="60" alt="">
+                    <span>Pet food</span>
+                </div>
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-transportation.png" width="60" alt="">
+                    <span>Transportation</span>
+                </div>
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-toys.png" width="60" alt="">
+                    <span>Toys</span>
+                </div>
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-bowls-and-cups.png" width="60" alt="">
+                    <span>Bowls and cups</span>
+                </div>
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-shampoos.png" width="60" alt="">
+                    <span>Shampoos</span>
+                </div>
+            </div>
+            <div class="help__list-line-two">
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-vitamins.png" width="60" alt="">
+                    <span>Vitamins</span>
+                </div>
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-medicines.png" width="60" alt="">
+                    <span>Medicines</span>
+                </div>
+                <div class="list__item">
+                    <img src="../../assets/icons/collars-or-leashes.png" width="60" alt="">
+                    <span>Collars / leashes</span>
+                </div>
+                <div class="list__item">
+                    <img src="../../assets/icons/icon-sleeping-area.png" width="60" alt="">
+                    <span>Sleeping areas</span>
+                </div>
             </div>
         </div>
     </section>
     <section class="section__donation">
         <div class="donation__content">
-            <div class="donation__dog"></div>
+            <div class="donation__dog"><img src="../../assets/images/donation-dog.png" alt=""></div>
             <div class="donation__text">
-                <h3>You can also make a donation</h3>
+                <h3>You can also<br>make a donation</h3>
                 <h5>Name of the bank / Type of bank account</h5>
-                <button class="credit__card">8380 2880 8028 8791 7435</button>
-            </div>
+                <div class="credit__cart">
+                    <img src="../../assets/icons/credit-card.png" alt="">
+                    <a href="#no_scroll"><h4>8380 2880 8028 8791 7435</h4></a>
+                </div>
+                <span>Legal information and lorem ipsum dolor sit amet, consectetur<br>adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac<br>diam. Praesent ultrices maximus tortor et<br>vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</span>   
+                </div>
         </div>
     </section>
     <footer>
         <div class="footer__content">
             <div class="footer__contacts">
                 <h3>For questions and suggestions</h3>
+                <div class="icon__email">
+                <img src="../../assets/icons/footer/icon-email.png" alt="">
                 <h4>email@shelter.com</h4>
+                </div>
+                <div class="icon__phone">
+                <img src="../../assets/icons/footer/icon-phone.png" alt="">
                 <h4>+13 674 567 75 54</h4>
+                </div>
             </div>
             <div class="footer__location">
                 <h3>We are waiting for your visit</h3>
+                <div class="icon__location">
+                <img src="../../assets/icons/footer/icon-marker.png" alt="">
                 <h4>1 Central Street, Boston (entrance from the store)</h4>
-                <h4>18 South Park, London </h4>
+                </div>
+                <div class="icon__location">
+                <img src="../../assets/icons/footer/icon-marker.png" alt="">
+                <h4>18 South Park, London</h4>
+                </div>
             </div>
-            <div class="footer__puppy"></div>
+            <div class="footer__puppy"><img src="../../assets/images/footer-puppy.png" alt=""></div>
         </div>
     </footer> 
 </body>
 </html>
+
+<!-- TODO:фавикон
+TODO:якоря
+TODO:ховер -->
+
+
