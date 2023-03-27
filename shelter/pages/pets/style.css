@@ -105,6 +105,19 @@ display: flex;
     border-radius: 9px;
 }
 
+.pets__card:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: #FFFFFF;
+}
+
+.pets__card:hover > .card__button {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: #FDDCC4;
+}
+
+
 .pets__card p {
     font-style: normal;
     font-weight: 400;
@@ -137,6 +150,10 @@ display: flex;
 .pets__buttons {
     justify-content: center;
     display: flex;
+}
+
+.pets__buttons:hover > button {
+    cursor: pointer;
 }
 
 .pets_buttons-grey {

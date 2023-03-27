@@ -7,6 +7,18 @@ body {
     margin: 0;
 }
 
+            /* шрифты */
+@font-face {
+  font-family: 'Arial';
+  src: url(../../assets/fonts/arial/arial-regular.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Georgia';
+  src: url(../../assets/fonts/georgia/georgia-regular.ttf) format('ttf');
+}
+
+
+
             /* start__screen */
 .start__screen {
     background: url(../../assets/images/start-screen-gradient-background.png);
@@ -99,6 +111,12 @@ header {
     border-radius: 100px;
     background: #F1CDB3;
     border: none;   
+}
+
+.button__primary:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: #FDDCC4;
 }
 
 .button__text {
@@ -199,7 +217,13 @@ header {
     align-items: center;
     height: 435px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #FAFAFA;
+}
+
+.slider__card:hover {
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: #FFFFFF;
 }
 
 .slider__card:hover > .slider__button {
@@ -244,6 +268,11 @@ header {
     height: 52px;
     border: 2px solid #F1CDB3;
     border-radius: 100px;
+}
+
+.slider__button-style:hover {
+    cursor: pointer;
+    background-color: #FDDCC4;
 }
 
 .buttons__pets {
@@ -409,7 +438,7 @@ footer {
 
 .footer__content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items:center;
     padding: 40px 40px 0 40px;
 }
