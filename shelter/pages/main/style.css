@@ -27,10 +27,12 @@ body {
 }
             /* header */
 header {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 40px 0 40px;
+    padding-top: 1.9375rem;
 }
 
 .header__title {
@@ -79,8 +81,10 @@ header {
 
             /* screen__content */
 .screen__content {
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 60px 40px 0 40px;
 }
 
@@ -140,7 +144,9 @@ header {
 }
 
 .about__content {
-    padding: 80px 40px 100px 40px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 60px 0;
     display: flex;
     justify-content: center;
 }
@@ -187,7 +193,9 @@ header {
 }
 
 .pets__content {
-    padding: 80px 40px 100px 40px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 100px 0;
 }
 
 .pets__text  {
@@ -313,6 +321,8 @@ header {
 }
 
 .help__content {
+    width: 1200px;
+    margin: 0 auto;
   padding: 80px 40px 100px 40px;
 }
 
@@ -362,10 +372,12 @@ header {
 }
 
 .donation__content {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 182px 100px 183px;
+    padding: 80px 0 100px 0;
 }
 
 .donation__dog {
@@ -437,10 +449,12 @@ footer {
 }
 
 .footer__content {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items:center;
-    padding: 40px 40px 0 40px;
+    padding: 40px 0 0 0;
 }
 
 .footer__contacts {

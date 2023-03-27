@@ -8,11 +8,13 @@ body {
 }
             /* header */
 header {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 120px;
-    margin: 0 40px 0 30px;
+    align-items: center;    
+    padding-top: 1.9375rem;
+    padding-bottom: 20px;
 }
 
 .header__title {
@@ -71,7 +73,9 @@ main {
 }
 
 .pets__containter {
-    padding: 80px 40px 100px 40px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 100px 0;
 }
 
 .pets__title {
@@ -90,7 +94,7 @@ main {
 
 .cards__containter {
 display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -212,10 +216,12 @@ footer {
 }
 
 .footer__content {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 40px 40px 0 40px;
+    padding: 40px 0 0 0;
 }
 
 .footer__contacts {
