@@ -103,18 +103,7 @@ display: flex;
   flex-wrap: wrap;
 }
 
-.pets__card-active {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 45px;
-    margin-left: 10px;
-    height: 435px;
-    background: #FAFAFA;
-    border-radius: 9px;
-}
-
-.pets__card-none {
+.pets__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,25 +115,13 @@ display: flex;
 }
 
 
-.pets__card-active:hover {
+.pets__card:hover {
     cursor: pointer;
     transition: ease-in-out 0.2s;
     background-color: #FFFFFF;
 }
 
-.pets__card-none:hover {
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-    background-color: #FFFFFF;
-}
-
-.pets__card-active:hover > .card__button {
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-    background-color: #FDDCC4;
-}
-
-.pets__card-none:hover > .card__button {
+.pets__card:hover > .card__button {
     cursor: pointer;
     transition: ease-in-out 0.2s;
     background-color: #FDDCC4;
@@ -356,11 +333,7 @@ footer {
        justify-items: center;
     }
 
-    .pets__card-active {
-        width: 270px;
-    }
-
-    .pets__card-none {
+    .pets__card {
         width: 270px;
     }
 
@@ -421,14 +394,14 @@ footer {
         display: block;
     }
 
-    .pets__card-active {
+    .pets__card {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 270px;
     }
 
-    .pets__card-none {
+    .hidden {
         display: none;
     }
 
@@ -441,6 +414,7 @@ footer {
     }
 
     .footer__content {
+        padding: 30px 0 0 0;
         width: 320px;
         display: flex;
         flex-direction: column;
