@@ -66,6 +66,11 @@ header {
 .link__style {
     border-bottom: 3px solid #F1CDB3;
 }
+
+.burger__menu {
+    display: none;
+}
+
             /* main */
 
 main {
@@ -109,6 +114,7 @@ display: flex;
     border-radius: 9px;
 }
 
+
 .pets__card:hover {
     cursor: pointer;
     transition: ease-in-out 0.2s;
@@ -120,7 +126,6 @@ display: flex;
     transition: ease-in-out 0.2s;
     background-color: #FDDCC4;
 }
-
 
 .pets__card p {
     font-style: normal;
@@ -305,4 +310,130 @@ footer {
 
 .icon__location img {
     padding-right: 20px;
+}
+
+@media screen and (max-width: 768px){
+
+    html {
+        min-width: 768px;
+        overflow-x: hidden;
+    }
+
+    header {
+        margin: 0 30px 0 30px;
+    }
+
+    .pets__containter {
+        width: 768px;
+    }
+
+    .cards__containter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       justify-items: center;
+    }
+
+    .pets__card {
+        width: 270px;
+    }
+
+    footer {
+       width: 768px;
+    }
+
+    .footer__content {
+        width: 768px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        padding: 0;
+    }
+
+    .footer__puppy {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+
+@media screen and (max-width: 320px){
+    
+    html {
+        min-width: 320px;
+        overflow-x: hidden;
+    }
+   
+    .header__nav__link {
+        display: none;
+    }
+
+    .burger__menu {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 22px;
+        left: 237px;
+        top: 49px;
+    }
+
+    .pets__title {
+        padding: 42px 0 42px 0;
+    }
+
+    .pets__title h3 {
+        font-size: 23px;
+    }
+
+    .pets__containter {
+        width: 320px;
+        padding: 0;
+    }
+
+    .cards__containter {
+        display: block;
+    }
+
+    .pets__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 270px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .pets__buttons {
+        padding: 42px 0 42px 0;
+    }
+
+    footer {
+        width: 320px;
+    }
+
+    .footer__content {
+        padding: 30px 0 0 0;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__contacts h3 {
+        width: 270px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer__content h3 {
+        width: 270px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .footer__puppy img {
+        width: 260px;
+        height: 269px;
+    }
 }
