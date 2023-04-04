@@ -325,16 +325,23 @@ footer {
 
     .pets__containter {
         width: 768px;
+        padding-bottom: 30px;
     }
 
     .cards__containter {
+        width: 708px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
        justify-items: center;
+
     }
 
     .pets__card {
         width: 270px;
+    }
+
+    .hidden {
+        display: none;
     }
 
     footer {
@@ -391,6 +398,7 @@ footer {
     }
 
     .cards__containter {
+        width: 300px;
         display: block;
     }
 
@@ -401,12 +409,12 @@ footer {
         width: 270px;
     }
 
-    .hidden {
+    .hidden_two {
         display: none;
     }
 
     .pets__buttons {
-        padding: 42px 0 42px 0;
+       padding-bottom: 20px;
     }
 
     footer {
