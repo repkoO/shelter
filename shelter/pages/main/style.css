@@ -262,6 +262,10 @@ header {
     background-color: white;
 }
 
+.hidden__button {
+    display: none;
+}
+
 .slider__button span {
     font-style: normal;
     font-weight: 400;
@@ -778,6 +782,7 @@ footer {
     .pets__content {
         width: 320px;
         padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .pets__slider {
@@ -788,6 +793,23 @@ footer {
     .slider__button-style {
         display: grid;
         order: 1;
+    }
+
+    .pets__text {
+        padding-bottom: 42px;
+    }
+
+    .hidden__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 80px;
+        padding-top: 20px;
+    }
+
+    .buttons__pets {
+        margin-top: 0;
+        padding-top: 42px;
     }
 
     .pets__text h3 {
@@ -802,14 +824,27 @@ footer {
 
     .help__content {
         width: 320px;
+        padding-top: 42px;
     }
 
     .help__list {
+        width: 290px;
+        padding: 42px 0 42px 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 30px;
+        row-gap: 30px;
+        margin: 0 auto;
     }
 
+    .help__text h3 {
+        font-size: 25px;
+    }
+
+    .list__item img {
+        width: 50px;
+    }
+    
     .list__item span {
         font-style: normal;
         font-weight: 400;
@@ -819,6 +854,7 @@ footer {
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
+        margin-top: 22px;
     }
 
     .donation__content {
@@ -826,6 +862,11 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        padding-bottom: 42px;
+    }
+
+    .donation__dog {
+        padding-top: 0;
     }
 
     .credit__cart {
