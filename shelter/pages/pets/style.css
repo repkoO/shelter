@@ -80,11 +80,11 @@ main {
 .pets__containter {
     width: 1200px;
     margin: 0 auto;
-    padding: 80px 0 100px 0;
+    padding: 90px 0 100px 0;
 }
 
 .pets__title {
-    padding-bottom: 45px;
+    padding-bottom: 58px;
     text-align: center;
 }
 
@@ -107,13 +107,12 @@ display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 45px;
-    margin-left: 10px;
+    margin-bottom: 30px;
+    gap: 10px;
     height: 435px;
     background: #FAFAFA;
     border-radius: 9px;
 }
-
 
 .pets__card:hover {
     cursor: pointer;
@@ -159,6 +158,8 @@ display: flex;
 .pets__buttons {
     justify-content: center;
     display: flex;
+    padding-top: 30px;
+    gap: 8px;
 }
 
 .pets__buttons:hover > button {
@@ -226,7 +227,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 40px 0 0 0;
 }
 
 .footer__contacts {
@@ -242,6 +242,10 @@ footer {
    font-size: 35px;
    line-height: 130%;
    letter-spacing: 0.06em;
+}
+
+.footer__puppy {
+    padding-top: 40px;
 }
 
 .footer__contacts h4 {
@@ -321,22 +325,30 @@ footer {
 
     header {
         margin: 0 30px 0 30px;
+        padding-bottom: 29px;
     }
 
     .pets__containter {
         width: 768px;
+        padding-top: 80px;
+        padding-bottom: 85px;
+    }
+
+    .pets__title {
         padding-bottom: 30px;
     }
 
     .cards__containter {
         width: 708px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-       justify-items: center;
-
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px 40px;
     }
 
     .pets__card {
+        margin-bottom: 0;
         width: 270px;
     }
 
@@ -349,17 +361,16 @@ footer {
     }
 
     .footer__content {
+        padding-top: 30px;
         width: 768px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .footer__puppy {
-        grid-column-start: 1;
-        grid-column-end: 3;
+        padding-top: 65px;
     }
 
 }
@@ -369,6 +380,11 @@ footer {
     html {
         min-width: 320px;
         overflow-x: hidden;
+    }
+
+    header {
+        margin: 0;
+        padding: 30px 8px 30px;
     }
    
     .header__nav__link {
@@ -393,13 +409,12 @@ footer {
     }
 
     .pets__containter {
-        width: 320px;
+        width: 300px;
         padding: 0;
     }
 
     .cards__containter {
         width: 300px;
-        display: block;
     }
 
     .pets__card {
@@ -414,7 +429,9 @@ footer {
     }
 
     .pets__buttons {
-       padding-bottom: 20px;
+        justify-content: space-between;
+       padding: 43px 0 50px 0;
+       gap: 0;
     }
 
     footer {
@@ -438,6 +455,10 @@ footer {
         width: 270px;
         font-size: 25px;
         text-align: center;
+    }
+
+    .footer__puppy {
+        padding-top: 40px;
     }
 
     .footer__puppy img {
