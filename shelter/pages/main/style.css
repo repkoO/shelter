@@ -7,6 +7,10 @@ body {
     margin: 0;
 }
 
+.scroll-hidden {
+    overflow: hidden;
+}
+
             /* шрифты */
 @font-face {
   font-family: 'Arial';
@@ -77,8 +81,44 @@ header {
     border-bottom: 3px solid #F1CDB3;
 }
 
+/* burger */
+
 .burger__menu {
     display: none;
+    z-index: 1000;
+}
+
+.burger__container {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 823px;
+    background-color: #292929;
+}
+
+.burger__title {
+padding-top: 30px;
+padding-left: 10px;
+}
+
+.burger__nav {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-top: 158px;
+    width: 243px;
+    margin: auto;
+}
+
+.burger__nav a {
+    text-decoration: none;
+    color: #CDCDCD;
+    font-size: 32px;
+    line-height: 52px;
+    font-weight: 400;
+    text-align: center;
 }
 
             /* screen__content */
@@ -555,6 +595,61 @@ footer {
     padding-top: 40px;
 }
 
+/* modal window */
+
+.modal__container {
+    display: block;
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(41, 41, 41, 0.6);
+}
+
+.modal__background {
+    width: 952px;
+    height: 552px;
+    background: transparent;
+}
+
+.open__modal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background: #FAFAFA;
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.modal__description {
+    padding: 50px 20px 88px 29px;
+}
+
+.button__modal {
+    display: flex;
+    justify-content: end;
+}
+
+.button__close {
+    cursor: pointer;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: transparent;
+    width: 52px;
+    height: 52px;
+}
+
+.hidden-modal {
+    display: none;
+}
 
 @media screen and (max-width: 768px){
    
@@ -690,6 +785,17 @@ footer {
 
 }
 
+@media screen and (max-width: 766px) {
+    .burger__menu {
+        position: relative;
+        display: flex;
+    }     
+
+    .header__nav__link {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 320px){ 
 
     html {
@@ -706,14 +812,14 @@ footer {
         display: none;
     }
 
-    .burger__menu {
+    /* .burger__menu {
         display: block;
         position: absolute;
         width: 30px;
         height: 22px;
         left: 237px;
         top: 49px;
-    }     
+    }      */
 
     .screen__content {
         width: 320px;

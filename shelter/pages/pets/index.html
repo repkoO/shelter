@@ -21,8 +21,9 @@
                     <a href="../main/index.html#help">Help the shelter</a> 
                     <a href="#contacts">Contacts</a>  
                 </div>
+                <img src="../../assets/icons/Burger.png" alt="" class="burger__menu">
             </nav>
-            <img src="../../assets/icons/Burger.png" alt="" class="burger__menu">
+            
         </header>
         <main>
             <section class="pets__content">
@@ -31,42 +32,42 @@
                     <h3>Our friends who<br>  are looking for a house</h3>
                 </div>
                 <div class="cards__containter">
-                    <div class="pets__card">
+                    <div class="pets__card" id="pets__modal">
                         <img src="../../assets/images/pets-katrine.png" alt="Katrine">
                         <p>Katrine</p>
                         <button class="card__button"><span>Learn more</span></button>
                     </div>
-                    <div class="pets__card">
+                    <div class="pets__card" id="pets__modal">
                         <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
                         <p>Jennifer</p>
                         <button class="card__button"><span>Learn more</span></button>
                     </div>
-                    <div class="pets__card">
+                    <div class="pets__card" id="pets__modal">
                         <img src="../../assets/images/pets-woody.png" alt="Woody">
                         <p>Woody</p>
                         <button class="card__button"><span>Learn more</span></button>
                     </div>
-                    <div class="pets__card hidden_two">
+                    <div class="pets__card hidden_two" id="pets__modal">
                         <img src="../../assets/images/pets-katrine-2.png" alt="Sophia">
                         <p>Sophia</p>
                         <button class="card__button"><span>Learn more</span></button>
                     </div>
-                    <div class="pets__card hidden_two">
+                    <div class="pets__card hidden_two" id="pets__modal">
                         <img src="../../assets/images/pets-timmy.png" alt="Timmy">
                         <p>Timmy</p>
                         <button class="card__button"><span>Learn more</span></button>
                     </div>
-                    <div class="pets__card hidden_two">
+                    <div class="pets__card hidden_two" id="pets__modal">
                         <img src="../../assets/images/pets-charly.png" alt="Charly">
                         <p>Charly</p>
                         <button class="card__button"><span>Learn more</span></button>
                     </div>
-                    <div class="pets__card hidden hidden_two">
+                    <div class="pets__card hidden hidden_two" id="pets__modal">
                         <img src="../../assets/images/pets-scarlet.png" alt="Scarlett">
                         <p>Scarlett</p>
                         <button class="card__button"><span>Learn more</span></button>
                     </div>
-                    <div class="pets__card hidden hidden_two">
+                    <div class="pets__card hidden hidden_two" id="pets__modal">
                         <img src="../../assets/images/pets-katrine-3.png" alt="Freddie">
                         <p>Freddie</p>
                         <button class="card__button"><span>Learn more</span></button>
@@ -109,5 +110,19 @@
                 <div class="footer__puppy"><img src="../../assets/images/footer-puppy.png" alt="puppy"></div>
             </div>
         </footer> 
+        <div class="modal__container">
+            <div class="modal__overlay hidden-modal" id="modal-ovrl">
+                <div class="modal__background">
+                    <div class="button__modal">
+                    <button id="button_cls" class="button__close"><span>X</span></button>
+                    </div>
+                <div class="open__modal">
+                    <div class="modal__img">изображение</div>
+                    <div class="modal__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi, earum obcaecati commodi error impedit ea vel! Maiores reprehenderit autem veritatis praesentium, corrupti laborum consequuntur! Expedita dolor aliquam ipsam quidem.</div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="../../script/script.js"></script>
 </body>
 </html>

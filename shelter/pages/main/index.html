@@ -22,8 +22,20 @@
                 <a href="#help">Help the shelter</a> 
                 <a href="#contacts">Contacts</a>  
             </div>
+            <div class="burger__container">
+                <div class="burger__title">
+                    <h1 class="logo__title">Cozy House</h1>
+                    <p class="logo__title__p">Shelter for pets in Boston</p>
+                </div>
+                <div class="burger__nav">
+                    <a href="#about" class="link__style">About the shelter</a>
+                    <a href="../pets/index.html">Our pets</a> 
+                    <a href="#help">Help the shelter</a> 
+                    <a href="#contacts">Contacts</a>  
+                </div>
+            </div>
+            <img src="../../assets/icons/Burger.png" alt="" class="burger__menu">
         </nav>
-        <img src="../../assets/icons/Burger.png" alt="" class="burger__menu">
     </header>
     <section class="screen__content">
         <div class="screen__header">
@@ -56,20 +68,20 @@
             </div>
                 <div class="pets__slider">
                     <div class="slider__button-style hidden_two"><span>&larr;</span></div>
-                <div class="slider__card">
+                <div class="slider__card" id="pets__modal" >
                     <img src="../../assets/images/pets-katrine.png" alt="Katrine">
                     <p>Katrine</p>
                     <button class="slider__button"><span>Learn more</span></button>
                 </div>
-                <div class="slider__card hidden_two">
+                <div class="slider__card hidden_two" id="pets__modal" >
                     <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
                     <p>Jennifer</p>
-                    <button class="slider__button"><span>Learn more</span></button>
+                    <button id="pets__modal" class="slider__button"><span>Learn more</span></button>
                 </div>
-                <div class="slider__card hidden hidden_two">
+                <div class="slider__card hidden hidden_two" id="pets__modal" >
                     <img src="../../assets/images/pets-woody.png" alt="Woody">
                     <p>Woody</p>
-                    <button class="slider__button"><span>Learn more</span></button>
+                    <button id="pets__modal" class="slider__button"><span>Learn more</span></button>
                 </div>
                 <div class="slider__button-style hidden_two"><span>&rarr;</span></div>
             </div>
@@ -174,11 +186,21 @@
             <div class="footer__puppy"><img src="../../assets/images/footer-puppy.png" alt="puppy"></div>
         </div>
     </footer> 
+    <div class="modal__container">
+        <div class="modal__overlay hidden-modal" id="modal-ovrl">
+            <div class="modal__background">
+                <div class="button__modal">
+                <button id="button_cls" class="button__close"><span>X</span></button>
+                </div>
+            <div class="open__modal">
+                <div class="modal__img">изображение</div>
+                <div class="modal__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi, earum obcaecati commodi error impedit ea vel! Maiores reprehenderit autem veritatis praesentium, corrupti laborum consequuntur! Expedita dolor aliquam ipsam quidem.</div>
+            </div>
+            </div>
+        </div>
+    </div>
     <script src="../../script/script.js"></script>
 </body>
 </html>
-
-<!-- TODO: logo in header
-TODO:ховер -->
 
 
