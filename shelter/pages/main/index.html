@@ -22,8 +22,22 @@
                 <a href="#help">Help the shelter</a> 
                 <a href="#contacts">Contacts</a>  
             </div>
+            <div class="menu__icon">
+                <span></span>
+            </div>
+                    <div class="burger__container">
+                        <div class="burger__title">
+                            <h1 class="logo__title">Cozy House</h1>
+                            <p class="logo__title__p">Shelter for pets in Boston</p>
+                        </div>
+                        <div class="burger__nav">
+                            <a href="#about" class="link__style">About the shelter</a>
+                            <a href="../pets/index.html">Our pets</a> 
+                            <a data-goto=".section__help" href="#">Help the shelter</a> 
+                            <a data-goto=".footer__content" href="#">Contacts</a>
+                     </div>
+            </div>
         </nav>
-        <img src="../../assets/icons/Burger.png" alt="" class="burger__menu">
     </header>
     <section class="screen__content">
         <div class="screen__header">
@@ -55,23 +69,9 @@
                 are looking for a house</h3>
             </div>
                 <div class="pets__slider">
-                    <div class="slider__button-style hidden_two"><span>&larr;</span></div>
-                <div class="slider__card">
-                    <img src="../../assets/images/pets-katrine.png" alt="Katrine">
-                    <p>Katrine</p>
-                    <button class="slider__button"><span>Learn more</span></button>
-                </div>
-                <div class="slider__card hidden_two">
-                    <img src="../../assets/images/pets-jennifer.png" alt="Jennifer">
-                    <p>Jennifer</p>
-                    <button class="slider__button"><span>Learn more</span></button>
-                </div>
-                <div class="slider__card hidden hidden_two">
-                    <img src="../../assets/images/pets-woody.png" alt="Woody">
-                    <p>Woody</p>
-                    <button class="slider__button"><span>Learn more</span></button>
-                </div>
-                <div class="slider__button-style hidden_two"><span>&rarr;</span></div>
+                    <div id="button-left" class="slider__button-style hidden_two"><span>&larr;</span></div>
+                    <div class="slider__wrapper" id="sliderWrapper"></div>
+                <div id="button-right" class="slider__button-style hidden_two"><span>&rarr;</span></div>
             </div>
             <div class="button_mob hidden__button">
                 <button class="slider__button-style"><span>&larr;</span></button>
@@ -174,10 +174,32 @@
             <div class="footer__puppy"><img src="../../assets/images/footer-puppy.png" alt="puppy"></div>
         </div>
     </footer> 
+    <div class="modal__container">
+        <div class="modal__overlay hidden-modal" id="modal-ovrl">
+            <div class="modal__background">
+                <div class="button__modal">
+                <button id="button_cls" class="button__close"><span>X</span></button>
+                </div>
+            <div class="open__modal">
+                    <div class="modal__img" src=""><img src="" id="modalImg"></div>
+                    <div class="modal__inf">
+                        <div class="modal__title" id="modalTitle"></div>
+                        <div class="modal__type" id="modalType"></div>
+                        <div class="modal__description" id="modalDescription"></div>
+                        <ul class="modal__ul">
+                            <li id="ageModal"></li>
+                            <li id="inoculationsModal"></li>
+                            <li id="diseasesModal"></li>
+                            <li id="parasitesModal"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../script/script.js"></script>
 </body>
 </html>
-
-<!-- TODO: logo in header
-TODO:ховер -->
 
 
