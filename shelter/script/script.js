@@ -1,9 +1,10 @@
+
+
 //burger
 
 const iconMenu = document.querySelector('.menu__icon')
 const menuContainer = document.querySelector('.burger__container')
 const menuLinks = document.querySelectorAll('[data-goto]')
-
 
 iconMenu.addEventListener('click', (e) => {
     iconMenu.classList.toggle('_active');
@@ -41,25 +42,34 @@ if (menuLinks.length > 0) {
 }
 
 //slider
-const btnLeft = document.querySelector('#button-left');
-const btnRight = document.querySelector('#button-right');
-const sliderWrapper = document.querySelector('#sliderWrapper')
+const displayedPets = 3;
+
+function generateSliderDiv (val) { //функция генерации дива с карточкой
+    const sliderItem = document.createElement('DIV');
+    sliderItem.classList.add('slider__card');
+    sliderItem.setAttribute('id', 'petsModal')
+    sliderItem.innerHTML = `<img src="${val.img}" alt="${val.name}">
+    <p>${val.name}</p>
+    <button class="slider__button"><span>Learn more</span></button>`;
+    return sliderItem;
+}
+
+//функция генерации слайдера
+function generateSlider(petsArr, sliderClass) {
+    const sliderItems = document.querySelector(`.${sliderClass}`);
+    sliderItems.innerHTML = "";
   
+    for (let i = 0; i < displayedPets; i++) {
+      const sliderItem = generateSliderDiv(petsArr[i]);
+      sliderItems.append(sliderItem);
+    }
+  }
 
-btnLeft.addEventListener('click', {
-
-})
-
-btnRight.addEventListener('click', {
-
-})
-
-
-
-//modal window 
+ //modal window 
 const modalClose = document.querySelector('#modal-ovrl'); //доступ к диву с модалкой
 const btn = document.querySelector('#button_cls'); //кнопка закрытия модалки
-const modalOpen = document.querySelectorAll('#pets__modal') //доступ к карточкам
+const modalOpen = document.querySelectorAll('#petsModal') //доступ к карточкам
+console.log(modalOpen);
 //поля модалки
 const modalImg = document.querySelector('#modalImg') //доступ к img модалки
 const modalDescription = document.querySelector('#modalDescription');
@@ -69,16 +79,9 @@ const ageModal = document.querySelector('#ageModal')
 const inoculationsModal = document.querySelector('#inoculationsModal')
 const diseasesModal = document.querySelector('#diseasesModal')
 const parasitesModal = document.querySelector('#parasitesModal')
-
 //получение данных из data
-const generateCardModalWindow = (value) => ``
-const getPets = () => {
-    return fetch('../../script/data.json')
-}
 
-getPets()
-    .then (res => res.json())
-    .then (data => {
+function openModalWindow (data) {
         modalOpen.forEach((card, index) => {
             card.addEventListener('click', () => {
                 modalImg.src = data[index].img;
@@ -91,10 +94,14 @@ getPets()
                 parasitesModal.innerHTML = `<b>Parasites:</b> ${data[index].parasites.join(', ')}`;
             })
         })
-    })
-    
+    }
 
-
+    window.onload = async () => {
+        const responce = await fetch('../../script/data.json');
+        const data = await responce.json()
+        generateSlider(data, 'slider__wrapper')
+        alert('добрый день, друзья. к сожалению, мне не удалось ничего реализовать кроме бургера, извиняюсь за низкое качество работы')
+     } 
 
 //функция открытия модалки при нажатии на кнопку + запрет скролла
 modalOpen.forEach((e) => {
@@ -109,5 +116,4 @@ btn.addEventListener('click', () => {
     document.body.classList.toggle('scroll-hidden')
 })
 
-//modal window pets
 
