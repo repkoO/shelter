@@ -17,10 +17,31 @@ function init() {
 }
 init();
 
-function initGame(width, heigth, bombscount) {
-  const mainGame = document.querySelector('.game');
-  const cells = width * heigth;
-  mainGame.innerHTML = '<button></button>'.repeat(cells);
-}
+function initGame(gameSize, bombCount) {
+  const game = [];
+  for (let xDirection = 0; xDirection < gameSize; xDirection += 1) {
+    const row = [];
+    for (let yDirection = 0; yDirection < gameSize; yDirection += 1) {
+      const square = document.createElement('div');
+      square.classList.add('hidden');
+      const tile = {
+        square,
+        xDirection,
+        yDirection,
+      };
+      row.push(tile);
+    }
+    game.push(row);
+  }
+  return game;
+} // cоздание массива с элементамиж
 
-initGame(10, 10, 5);
+const board = initGame(10);
+
+const gameBoard = document.querySelector('.game');
+
+board.forEach((row) => {
+  row.forEach((tile) => {
+    gameBoard.append(tile.square);
+  });
+});

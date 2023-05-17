@@ -23,3 +23,9 @@ button {
   height: 20px;
   margin: 30px;
 }
+
+.hidden {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+}
